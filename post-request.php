@@ -38,14 +38,14 @@ $get_values = array(
     'password'      => '', //PASSWORD
     'type'          => 'TEXT',   
     'mobile'        => '', // Single, Mutiple number (comma separated mobile number)
-    'smsText'       => 'Hello world', //Message 
+    'smsText'       => urlencode('Hello world'), //Message 
     'maskName'      => '',
     'campaignName'  => ''
 );
 
 $get_string = "";
 foreach ($get_values as $key => $value) {
-    $get_string .= "$key=" . urlencode($value) . "&";
+    $get_string .= "$key=" . $value . "&";
 }
 $get_string = rtrim($get_string, "& ");
 
