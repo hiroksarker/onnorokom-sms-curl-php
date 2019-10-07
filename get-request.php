@@ -39,14 +39,14 @@ $post_values = array(
     'apiKey'        => '', //API KEY (Our User Panel)
     'type'          => 'TEXT',   
     'mobile'        => '', // Single, Mutiple number (comma separated mobile number)
-    'smsText'       => 'Hello world', //Message 
+    'smsText'       => urlencode('Hello world'), //Message 
     'maskName'      => '',
     'campaignName'  => ''
 );
 
 $post_string = "";
 foreach ($post_values as $key => $value) {
-    $post_string .= "$key=" . urlencode($value) . "&";
+    $post_string .= "$key=" . $value . "&";
 }
 $post_string = rtrim($post_string, "& ");
 //curl init
