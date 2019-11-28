@@ -7,17 +7,16 @@
     for Rest API Example. Below given GET and POST example.    
 */
 
-//POST METHOD (Only API KEY)
+//GET METHOD (USERNAME and PASSWORD)
 /*
-    NumberSms - Single and Mutiple Number(Comma sepreated value) Sms Send Method
-    ListSms - Each and every number contains individual message (json format)
-    SMSDeliveryStatus - SMS status check
+    OneToOne - Single Sms Send Method
+    OneToMany - Bulk Sms Method (Comma sepreated value)
+    DeliveryStatus - Return Delivery Status
+    GetBalance - Balance Check
 */
-
 
 //Parameter
 /*
-    GetCurrentBalance Balance Check
     username - User name which is used for login
     password - Password
     smsText - Text or UCS

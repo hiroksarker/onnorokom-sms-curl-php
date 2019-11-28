@@ -8,17 +8,17 @@
 */
 
 
-//GET METHOD (USERNAME and PASSWORD)
+//POST METHOD (Only API KEY)
 /*
-    OneToOne - Single Sms Send Method
-    OneToMany - Bulk Sms Method (Comma sepreated value)
-    DeliveryStatus - Return Delivery Status
-    GetBalance - Balance Check
+    NumberSms - Single and Mutiple Number(Comma sepreated value) Sms Send Method
+    ListSms - Each and every number contains individual message (json format)
+    SMSDeliveryStatus - SMS status check	
+    GetCurrentBalance - Balance Check
 */
+
 
 //Parameter
 /*
-    GetCurrentBalance Balance Check
     username - User name which is used for login
     password - Password
     smsText - Text or UCS
